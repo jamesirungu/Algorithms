@@ -11,10 +11,7 @@ class MyHashMap {
     }
     
     public int get(int key) {
-        if(data[key]>-1)
             return data[key];
-        else
-            return -1;
     }
     
     public void remove(int key) {
