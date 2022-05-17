@@ -14,6 +14,13 @@
  * }
  */
 class Solution {
+    // treat numbers like a string, concatenate at every step and use java method Integer.parseInt() to convert to integer every time we reach a leaf
+    
+    // variable sum holds the sum to be returned
+    // a dfs method getSumHeight ads the node.val(root.val) at the end of the string,
+    //whenever root is null, return 
+    //when root.left is null and root.right is null, it means we got a leaf. convert the string so far to integer and add it to sum
+    // when preorder is complete return sum from the main
     int sum=0;
     public int sumNumbers(TreeNode root) {
         sum=0;
