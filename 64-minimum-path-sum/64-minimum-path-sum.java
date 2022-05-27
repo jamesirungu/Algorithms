@@ -1,3 +1,9 @@
+/*
+
+    - traverse the array from the last element backwords maintaining the minimum distance between the two possible routes
+    - for the last tow and last column where there is only one possible route, the path = path + the adjacent cell
+    
+*/
 class Solution {
     public int minPathSum(int[][] grid) {
         int y = grid[0].length-1;
