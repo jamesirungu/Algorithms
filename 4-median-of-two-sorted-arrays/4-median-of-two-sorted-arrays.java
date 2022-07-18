@@ -15,9 +15,6 @@ class Solution {
         
         boolean isEven = arr.length%2==0?true:false;
         
-        
-        //[1,2], nums2 = [3,4]
-        //1,2,3,4
         if(isEven==true){
             return (arr[(arr.length/2)-1 ]+arr[arr.length/2])/(double)2;
         }
