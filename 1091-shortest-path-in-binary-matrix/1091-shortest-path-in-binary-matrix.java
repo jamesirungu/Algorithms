@@ -1,6 +1,11 @@
 class Solution {
-    public int shortestPathBinaryMatrix(int[][] g) {
-        //no need to try if the first step is a 1        
+    //if first cell is a zero or last cell is a zero, return -1
+    //implement bfs
+    //define a queue which will hold the visited cells and the distance
+    //for every cell, run bfs in all the  directions as long as its not edge case (-1) and mark visited as 1
+    // while traversing next element plooed from a queue, check if you get to last cell, if so return the value of the last array element form the queue
+    //if the queue is empty without before getting to the last cell, return -1
+    public int shortestPathBinaryMatrix(int[][] g) { 
         if(g[0][0]==1 ||g[g.length-1][g.length-1]==1)
             return -1;
         
