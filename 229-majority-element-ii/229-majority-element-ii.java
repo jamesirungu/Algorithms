@@ -14,6 +14,9 @@ class Solution {
         
         for(int i=0; i<n;i++){
             int currCount=0;
+            if(dataSet.contains(nums[i])){
+                continue;
+            }
             for(int m=i;m>=0;m--){
                 if(nums[i]==nums[m]){
                     currCount++;
