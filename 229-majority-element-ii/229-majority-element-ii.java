@@ -2,8 +2,10 @@ class Solution {
     /*
         * requirement is to solve the problem on a O(1) space
         * n= nums.length
-        * define an empty set which will contain all elements that fulfil the condition and will be return list
-        * loop through nums, for every element loop backwards counting the number of ocurrences of element i and if the count satisfies condition that count> n/3, add it to the set
+        * define an empty set which will contain all elements that fulfil the condition and will be converted to return list
+        * loop through nums
+        for every element , if it exists in set stop the continue.
+        if its not in set loop backwards counting the number of ocurrences of element i and if the count satisfies condition that count> n/3, add it to the set
         *if you get a successful add to the set, break from inner loop
         * convert the set to a list and return the list  
     */
